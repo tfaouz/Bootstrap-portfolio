@@ -1,1 +1,0 @@
-started it from scratch with a nav bar. then decided to use the one you supplied. 
