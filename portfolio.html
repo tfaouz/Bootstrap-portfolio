@@ -3,63 +3,93 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Portfolio | Your Name</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width = device-width, initial-scale = 1">
+  <title>Portfolio | Thibault Faouz</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <!---Is this on the main stylesheet or style      which style(1/2) is it?  -->
 </head>
+
 
 <body>
 
   <header id="masthead">
     <div class="container">
-      <a href="index.html" id="logo">Cat Page</a>
-      <nav>
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+      <div class="row">
+        <div class="col-md-4 col-sm-12 bg-info col-12" id="logo">
+          <a href="index.html">Thibault Faouz</a>
+        </div>
+        <div class="col-md-8 col-sm-12 col-12">
+          <nav class="col-sm-12">
+            <!-- We talked about the nav responsiveness in class. 
+                Glad  you clarified a few things-->
+            <a class="col-3 " href="index.html">About</a>
+            <a class="col-3" href="portfolio.html">Portfolio</a>
+            <a class="col-3" href="contact.html">Contact</a>
+          </nav>
+        </div>
+      </div>
     </div>
   </header>
 
   <div id="main-container" class="container">
     <section class="main-section">
-      <h1>Portfolio</h1>
+      <div class="row">
+        <div class="col">
+          <h1>Portfolio</h1>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="work">
+                <img src="assets/images/technics-q-c-640-480-1.jpg" alt="Word Guess" class="img-fluid">
+                <h3>Word Guess</h3>
+              </div>
+            </div>
 
-      <div class="work">
-        <img src="assets/images/technics-q-c-640-480-1.jpg" alt="Word Guess">
+            <div class="col-md-4">
+              <div class="work">
+                <img src="assets/images/technics-q-c-640-480-2.jpg" alt="RPG Game" class="img-fluid">
+                <h3>RPG Game</h3>
+              </div>
+            </div>
+          </div>
 
-        <h3>Word Guess</h3>
-      </div>
-      <div class="work">
-        <img src="assets/images/technics-q-c-640-480-2.jpg" alt="RPG Game">
+          <div class="row">
+            <div class="col-md-4 ">
+              <div class="work">
+                <img src="assets/images/technics-q-c-640-480-5.jpg" alt="Trivia Game" class="img-fluid">
+                <h3>Trivia Game</h3>
+              </div>
+            </div>
 
-        <h3>RPG Game</h3>
-      </div>
-      <div class="work">
-        <img src="assets/images/technics-q-c-640-480-5.jpg" alt="Trivia Game">
+            <div class="col-md-4">
+              <div class="work img-fluid">
+                <img src="assets/images/technics-q-c-640-480-7.jpg" alt="Rutgers Info Widget" class="img-fluid">
+                <h3>Rutgers Info Widget</h3>
+              </div>
+            </div>
+          </div>
 
-        <h3>Trivia Game</h3>
-      </div>
-      <div class="work">
-        <img src="assets/images/technics-q-c-640-480-7.jpg" alt="Rutgers Info Widget">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="work">
+                <img src="assets/images/technics-q-c-640-480-9.jpg" alt="Rock Paper Scissors" class="img-fluid">
+                <h3>Rock Paper Scissors</h3>
+              </div>
+            </div>
 
-        <h3>Rutgers Info Widget</h3>
-      </div>
-      <div class="work">
-        <img src="assets/images/technics-q-c-640-480-9.jpg" alt="Rock Paper Scissors">
-
-        <h3>Rock Paper Scissors</h3>
-      </div>
-
+          </div>
+        </div>
     </section>
 
   </div>
 
-  <footer>
+  <footer class="fixed-bottom">
     <div class="container">
       Copyright &copy;
     </div>
   </footer>
 </body>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </html>

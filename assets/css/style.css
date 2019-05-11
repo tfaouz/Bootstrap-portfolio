@@ -1,58 +1,48 @@
 body {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 18px;
-  line-height: 34px;
-  color: #777777;
+    color: #777777;
   background: url("../images/concrete_seamless.png");
- }
- 
- * {
+}
+
+* {
   box-sizing: border-box;
- }
- 
- /* general */
- 
- .container {
-  width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
-  clear: both;
- }
- 
- h1,
- h2,
- h3,
- p {
+}
+
+h1,
+h2,
+h3,
+p {
   margin-bottom: 20px;
- }
- 
- p:last-child {
+}
+
+p:last-child {
   margin-bottom: 0;
- }
- 
- h1,
- h2,
- h3 {
+}
+
+h1,
+h2,
+h3 {
   font-family: Georgia, Times, "Times New Roman", serif;
   font-weight: 700;
   color: #4aaaa5;
- }
- 
- h1 {
+}
+
+h1 {
   padding-bottom: 20px;
   font-size: 30px;
   line-height: 49px;
   border-bottom: 3px solid #dddddd;
- }
- 
- h2,
- h3 {
+}
+
+h2,
+h3 {
   font-size: 22px;
- }
- 
- /* header */
- 
- #masthead {
+}
+
+/* header */
+
+#masthead {
   position: fixed;
   z-index: 99;
   width: 100%;
@@ -61,9 +51,13 @@ body {
   color: #ffffff;
   background: #ffffff;
   border-bottom: 2px solid #cccccc;
- }
- 
- #logo {
+}
+
+#logo a {
+  color: white;
+}
+
+#logo {
   float: left;
   width: 250px;
   height: 90px;
@@ -75,14 +69,15 @@ body {
   text-align: center;
   text-decoration: none;
   background: #4aaaa5;
- }
- 
- nav {
+}
+
+nav {
   float: right;
   margin-top: 25px;
- }
- 
- nav a {
+}
+.navbar-expand{-sm|-md|-lg|-xl}
+
+nav a {
   display: inline-block;
   padding-left: 15px;
   margin-left: 15px;
@@ -90,15 +85,17 @@ body {
   color: #999;
   text-decoration: none;
   border-left: 1px solid #efefef;
- }
- 
- nav a:first-child {
+  width: 300
+}
+
+nav a:first-child {
   border-left: 0 none;
- }
- 
- /* footer */
- 
- footer {
+}
+
+
+/* footer */
+
+footer {
   padding: 30px 0;
   clear: both;
   font-size: 12px;
@@ -108,23 +105,23 @@ body {
   background: #666666;
   border-top: 8px solid #4aaaa5;
   height: 50px;
- }
- 
- h3, h2 {
+}
+
+h3, h2 {
   padding-bottom: 20px;
   margin-bottom: 15px;
   line-height: 22px;
   border-bottom: 2px solid #eeeeee;
- }
- 
- /* main */
- 
- #main-container {
+}
+
+/* main */
+
+#main-container {
   padding-top: 130px;
   min-height: calc(100vh - 70px);
- }
- 
- .main-section {
+}
+
+.main-section {
   float: left;
   width: 100%;
   max-width: 960px;
@@ -132,29 +129,29 @@ body {
   margin: 0 0 40px;
   background: #ffffff;
   border: 1px solid #dddddd;
- }
- 
- /* portfolio page */
- 
- .work {
+}
+
+/* portfolio page */
+
+.work {
   position: relative;
   float: left;
   width: 274px;
   margin: 20px 0 25px;
   overflow: auto;
- }
- 
- .work:nth-child(even) {
+}
+
+.work:nth-child(even) {
   margin-right: 40px;
- }
- 
- .work img {
+}
+
+.work img {
   width: 100%;
   border: 0 none;
   opacity: 0.8;
- }
- 
- .work h3 {
+}
+
+.work h3 {
   position: absolute;
   bottom: 20px;
   width: 100%;
@@ -166,100 +163,54 @@ body {
   text-align: center;
   background: #4aaaa5;
   border-bottom: 0;
- }
+}
+
+.auth-image {
  
- .auth-image {
-  float: left;
-  width: 200px;
+  width: 40%;
   height: auto;
   margin-top: 10px;
   margin-right: 25px;
- }
- 
- /* contact page */
- 
- #contact-form ul {
+}
+
+/* contact page */
+
+#contact-form ul {
   margin-bottom: 20px;
- }
- 
- #contact-form li {
+}
+
+#contact-form li {
   margin-bottom: 10px;
- }
- 
- label,
- input[type=text],
- input[type=email],
- textarea {
+}
+
+label,
+input[type=text],
+input[type=email],
+textarea {
   display: block;
   width: 100%;
- }
- 
- input[type=text],
- input[type=email],
- textarea {
+}
+
+input[type=text],
+input[type=email],
+textarea {
   height: 35px;
   padding: 0 10px;
   font-size: 14px;
   border: 1px solid #dddddd;
- }
- 
- textarea {
+}
+
+textarea {
   height: 200px;
- }
- 
- input[type=submit] {
+}
+
+input[type=submit] {
   padding: 10px 30px;
   font-size: 18px;
   color: #ffffff;
   cursor: pointer;
   background: #4aaaa5;
   border: 0 none;
- }
- 
- @media screen and (max-width: 980px) {
-  #logo {
-    background-color: yellow;
-    float: left;
-    width: 30%;
-    margin-left: 40px;
-    }
-  #masthead {
-    width: 100%;
-    }
-  .main-section {
-    float: left;
-    width: 70%;
-    margin-left: 5%;
-  }
- }
- 
- @media screen and (max-width: 768px) {
-  #logo {
-    background-color: red;
-    float: left;
-    width: 30%;
-    margin-left: 40px;
-    }
-  #masthead {
-    width: 100%;
-    }
-  .main-section {
-    float: left;
-    width: 90%;
-    margin-left: 5%;
- }
- 
- @media screen and (max-width: 640px) {
-  #logo {
-    background-color: green;
-    width: 100%;
-    position: static;
-  }
-  #masthead {
-    width: 100%;
-  }
-  .main-section {
-    width: 90%;
-    margin-left: 20px;
-  }
- }
+}
+  
+}
